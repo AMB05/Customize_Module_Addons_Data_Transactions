@@ -2,7 +2,7 @@
 Customize_Module_Addons_Data_Transactions
 
 ## Instalasi  
-./odoo-bin scaffold my_calendar /opt/odoo/odoo-server-17/kustomisasi/
+./odoo-bin scaffold data_transaksi /path/your/directory/customize/
 
 # File Structure
 ![image](https://github.com/user-attachments/assets/5a17e8ac-09bd-4c0f-b28e-c17f0f2b38d8)
