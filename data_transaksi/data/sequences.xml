@@ -1,0 +1,22 @@
+<odoo>
+    <data noupdate="1">
+        <!-- Sequence untuk transaksi -->
+        <record id="seq_account_transaction" model="ir.sequence">
+            <field name="name">Account Transaction Sequence</field>
+            <field name="code">account.transaction</field>
+            <field name="prefix">TRANS/</field>
+            <field name="padding">5</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+            <field name="implementation">no_gap</field>
+        </record>
+    </data>
+</odoo>
+
+
+<!-- name: Nama sequence untuk keperluan referensi. -->
+<!-- code: Identifier unik untuk sequence ini (digunakan dalam kode Python). -->
+<!-- prefix: Awalan untuk nomor sequence, misalnya "TRANS/". -->
+<!-- padding: Panjang angka, misalnya 00001. -->
+<!-- number_increment: Penambahan nomor setiap kali sequence digunakan. -->
+<!-- implementation: Gunakan no_gap untuk nomor yang berkelanjutan tanpa celah. -->

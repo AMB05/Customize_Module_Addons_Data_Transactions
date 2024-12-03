@@ -1,0 +1,43 @@
+<odoo>
+    <!-- Template Utama untuk Laporan -->
+    <template id="report_account_transaction_template">
+        <t t-name="data_transactions.report_account_transaction">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="doc">
+                    <div class="page">
+                        <h2>Data Transaction Report</h2>
+                        <p><strong>Transaction Number:</strong> <t t-esc="doc.name"/></p>
+                        <p><strong>Amount:</strong> <t t-esc="doc.amount"/></p>
+                        <p><strong>Transaction Date:</strong> <t t-esc="doc.date"/></p>
+                        <p><strong>Description:</strong> <t t-esc="doc.description"/></p>
+                        <p><strong>State:</strong> <t t-esc="doc.state"/></p>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <!-- Konfigurasi Report -->
+    <!-- <report 
+        id="report_account_transaction"
+        string="Accounting Transaction Report"
+        model="account.transaction"
+        report_type="qweb-pdf"
+        name="module_name.report_account_transaction_template"
+        file="module_name.report_account_transaction_template"
+        print_report_name="'Accounting Transaction - %s' % (object.name)"
+    /> -->
+    <!-- <record id="action_account_transaction_report" model="ir.actions.report">
+        <field name="name">Data Transaction Report</field>
+        <field name="model">account.transaction</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">data_transactions.report_account_transaction</field>  
+        <field name="report_file">data_transactions.report_account_transaction</field>  
+        <field name="print_report_name">"Transaction Report - %s" % (object.name)</field>
+        <field name="binding_model_id" ref="model_account_transaction"/> 
+        <field name="binding_type">report</field>
+    </record> -->
+
+    
+
+</odoo>
