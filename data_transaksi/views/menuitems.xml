@@ -1,0 +1,13 @@
+<odoo>
+    <menuitem id="menu_account_transaction_root" name="Accounting Transactions" sequence="10" />
+    
+    <menuitem id="menu_account_transaction" 
+              name="Transactions" 
+              parent="menu_account_transaction_root" 
+              action="action_account_transaction" 
+              sequence="20" />
+</odoo>
+
+<!-- menu_account_transaction_root: Menu utama di aplikasi. -->
+<!-- menu_account_transaction: Submenu yang terkait dengan transaksi. -->
+<!-- action: Dihubungkan ke aksi atau tampilan (misalnya, tree view atau form view). -->
